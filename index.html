@@ -19,51 +19,53 @@
 
 </head>
   <body class="no--margin">
-    <div class="contenedor">
-      <h1 class="contenedor__tittle no--padding">IP Address Tracker</h1>
-
-      <div class="alerta oculto">
-        <p class="alerta__tipo no--margin">Error</p>
-        <p class="alerta__msg no--margin">Dirección ip no válida</p>
-      </div>
-      
-      <form class="contenedor__form">
-        <input type="text" class="form__input" placeholder="Search for any IP address or domain">
+    <main>
+      <div class="contenedor">
+        <h1 class="contenedor__tittle no--padding">IP Address Tracker</h1>
+  
+        <div class="alerta oculto">
+          <p class="alerta__tipo no--margin">Error</p>
+          <p class="alerta__msg no--margin">Dirección ip no válida</p>
+        </div>
         
-        <a class="form__btn"></a>
-      </form>
-    </div>
-
-
-    <div class="info">
-      <div class="info__item">
-        <p class="uppercase no--margin info__label">Ip Address</p>
-        <p id="ip" class="no--margin info__value">-</p>
-      </div>        
-      
-      <div class="info__item">
-        <p class="uppercase no--margin info__label">Location</p>
-        <p id="location" class="no--margin info__value">-</p>
-      </div>        
-      
-      <div class="info__item">
-        <p class="uppercase no--margin info__label">Timezone</p>
-        <p id="timezone" class="no--margin info__value">-</p>
-      </div> 
-
-      <div class="info__item">
-        <p class="uppercase no--margin info__label">ISP</p>
-        <p id="isp" class="no--margin info__value">-</p>
+        <form class="contenedor__form">
+          <input type="text" class="form__input" placeholder="Search for any IP address or domain">
+          
+          <a class="form__btn"></a>
+        </form>
       </div>
-    </div>
-    
-    <div id="map">
-    </div>
-
-
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-    crossorigin=""></script>
+  
+  
+      <div class="info">
+        <div class="info__item">
+          <p class="uppercase no--margin info__label">Ip Address</p>
+          <p id="ip" class="no--margin info__value">-</p>
+        </div>        
+        
+        <div class="info__item">
+          <p class="uppercase no--margin info__label">Location</p>
+          <p id="location" class="no--margin info__value">-</p>
+        </div>        
+        
+        <div class="info__item">
+          <p class="uppercase no--margin info__label">Timezone</p>
+          <p id="timezone" class="no--margin info__value">-</p>
+        </div> 
+  
+        <div class="info__item">
+          <p class="uppercase no--margin info__label">ISP</p>
+          <p id="isp" class="no--margin info__value">-</p>
+        </div>
+      </div>
+      
+      <div id="map">
+      </div>
+  
+  
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""></script>
+    </main>
     <script src="JS/app.js"></script>
   </body>
 </body>
