@@ -86,6 +86,16 @@ html {
     font-size: 1.5rem;
 }
 
+.info__label {
+    font-size: 1rem;
+    color: gray;
+    font-weight: 500;
+}
+.info__value {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 #map {
     display: flex;
     flex-direction: column;
