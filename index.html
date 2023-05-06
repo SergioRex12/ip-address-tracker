@@ -9,6 +9,9 @@
   <title>Frontend Mentor | IP Address Tracker</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/app.css">
@@ -19,7 +22,7 @@
       <h1 class="contenedor__tittle no--padding">IP Address Tracker</h1>
       
       <form action="" class="contenedor__form">
-        <input type="number" class="form__input">
+        <input type="number" class="form__input" placeholder="Search for any IP address or domain">
 
         <a class="form__btn"></a>
       </form>
@@ -27,30 +30,34 @@
     </div>
 
     <div class="info">
-      <div>
+      <div class="info__item">
         <p class="uppercase no--margin info__label">Ip Address</p>
         <h3 class="no--margin info__value">IP</h3>
       </div>        
       
-      <div>
+      <div class="info__item">
         <p class="uppercase no--margin info__label">Location</p>
         <h3 class="no--margin info__value">Location</h3>
       </div>        
       
-      <div>
+      <div class="info__item">
         <p class="uppercase no--margin info__label">Timezone</p>
         <h3 class="no--margin info__value">UTC </h3>
       </div> 
 
-      <div>
+      <div class="info__item">
         <p class="uppercase no--margin info__label">ISP</p>
         <h3 class="no--margin info__value">SpaceX </h3>
       </div>
     </div>
-
-    <div class="map">
+    
+    <div id="map">
     </div>
 
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
     <script src="JS/app.js"></script>
   </body>
 </body>

@@ -8,28 +8,16 @@ html {
     box-sizing: inherit;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
-.no--padding {
-    padding: 0;
-}
-
-.no--margin {
-    margin: 0;
-}
-
 /** Globales **/
 .contenedor {
     background-image: url('/images/pattern-bg-desktop.png');
-    background-position: center;
+
     background-size: cover;
 
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    padding-bottom: 7rem;
+    padding-bottom: 9rem;
 }
 
 
@@ -48,7 +36,7 @@ html {
 
 .form__input {
     padding: 1.3rem;
-    padding-left: 20rem;
+    width: 30%;
 
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -58,9 +46,9 @@ html {
 .form__btn {
     background-color: black;
     background-image: url("/images/icon-arrow.svg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 25%;
-    background-position: center;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     
@@ -69,28 +57,60 @@ html {
 }
 
 .info {
-    left: 30%;
+    left: 20%;
     top: 12%;
     position: absolute;
-    width: 40%;
+    width: 60%;
+    height: 12%;
     display: grid;
+    column-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     margin: auto;
     margin-top: 3rem;
     border-radius: 1rem;
     background-color: white;
+    padding: 3rem;
 }
 
-.info__label {
-    margin: 2rem;
+.info__item {
+    border-right: 1px solid gray;
+}
+.info__item:last-of-type {
+    border: none;
+}
+
+.info__item .info__label {
+    margin-bottom: 1rem;
 }
 .info__value {
+    font-size: 1.5rem;
+}
 
+#map {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 75rem;
+    z-index: -1;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.no--padding {
+    padding: 0;
+}
+
+.no--margin {
+    margin: 0;
 }
 
 @media (max-width: 480px) {
     .form__input {
         padding: 1.3rem;
-        padding-left: 35%;
+        width: 80%;
     }
 }
