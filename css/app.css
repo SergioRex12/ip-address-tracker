@@ -87,13 +87,39 @@ html {
 }
 
 #map {
+    display: flex;
+    flex-direction: column;
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 75rem;
+    height: 78vh;
+    width: 100vw;
+
     z-index: -1;
+}
+
+.alerta {
+    text-align: center;
+    background-color: red;
+    margin: auto;
+    width: 20%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.alerta__tipo {
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.alerta__msg {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .uppercase {
@@ -107,10 +133,54 @@ html {
 .no--margin {
     margin: 0;
 }
+.oculto {
+    display: none;
+}
 
+/*Movil*/
 @media (max-width: 480px) {
     .form__input {
         padding: 1.3rem;
         width: 80%;
+    }
+
+    .info {
+        display: block;
+        align-items: center;
+
+        left: 5%;
+        top: 13%;
+        position: absolute;
+        width: 90%;
+        height: 24%;
+    }
+
+    .info--active {
+        top: 25%;
+    }
+
+    .info__item .info__label {
+        margin-bottom: 0;
+    }
+
+    .info__item {
+        margin-top: 1rem;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+    }  
+
+    .info__item:first-of-type {
+        margin-top: 0;
+    }
+
+    .alerta {
+        width: 40%;
+    }
+
+
+
+    #map {
+        height: 75vh;
     }
 }

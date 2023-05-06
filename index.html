@@ -20,34 +20,39 @@
   <body class="no--margin">
     <div class="contenedor">
       <h1 class="contenedor__tittle no--padding">IP Address Tracker</h1>
+
+      <div class="alerta oculto">
+        <p class="alerta__tipo no--margin">Error</p>
+        <p class="alerta__msg no--margin">Dirección ip no válida</p>
+      </div>
       
       <form action="" class="contenedor__form">
-        <input type="number" class="form__input" placeholder="Search for any IP address or domain">
-
+        <input type="text" class="form__input" placeholder="Search for any IP address or domain">
+        
         <a class="form__btn"></a>
       </form>
-  
     </div>
+
 
     <div class="info">
       <div class="info__item">
         <p class="uppercase no--margin info__label">Ip Address</p>
-        <h3 class="no--margin info__value">IP</h3>
+        <h3 id="ip" class="no--margin info__value">IP</h3>
       </div>        
       
       <div class="info__item">
         <p class="uppercase no--margin info__label">Location</p>
-        <h3 class="no--margin info__value">Location</h3>
+        <h3 id="location" class="no--margin info__value">Location</h3>
       </div>        
       
       <div class="info__item">
         <p class="uppercase no--margin info__label">Timezone</p>
-        <h3 class="no--margin info__value">UTC </h3>
+        <h3 id="timezone" class="no--margin info__value">UTC </h3>
       </div> 
 
       <div class="info__item">
         <p class="uppercase no--margin info__label">ISP</p>
-        <h3 class="no--margin info__value">SpaceX </h3>
+        <h3 id="isp" class="no--margin info__value">SpaceX </h3>
       </div>
     </div>
     
