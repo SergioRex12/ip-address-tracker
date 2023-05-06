@@ -1,0 +1,1 @@
+const api = "https://geo.ipify.org/api/v2/country,city?apiKey=at_UGV5rjxxlfuEM5s68t3tMs6XZhGz5&ipAddress="
