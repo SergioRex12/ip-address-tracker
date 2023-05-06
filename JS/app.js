@@ -4,6 +4,7 @@ var map;
 document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.form__btn').addEventListener('click', searchIp);
+    document.querySelector('.contenedor__form').addEventListener('submit', searchIp);
 
     
     map = L.map('map', {
