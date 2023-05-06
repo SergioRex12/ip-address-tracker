@@ -149,6 +149,12 @@ html {
 
 /*Movil*/
 @media (max-width: 480px) {
+    .contenedor {
+        background-image: url('/images/pattern-bg-mobile.png');
+
+    }
+    
+
     .form__input {
         padding: 1.3rem;
         width: 80%;
